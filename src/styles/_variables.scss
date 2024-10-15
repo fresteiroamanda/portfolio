@@ -1,0 +1,49 @@
+//color
+$primary-color: #141827;
+$secondary-color: #c1d9d0;
+$tertiary-color: #736681;
+$highlight-color: #fffae3;
+$background-color: #141827;
+$success-color: #28a745;
+$error-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$text-color: #fff;
+
+//fonts
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-sm: 14px;
+$line-height-base: 1.5;
+$font-family: "Montserrat Alternates", sans-serif;
+
+//spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
+
+//sizes
+$container-max-width: 1200px;
+$header-height: 60px;
+$footer-height: 40px;
+
+//querys
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//shadows
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+//trasitions
+$transition-duration: 0.3s;
+$transition-timing-function: ease-in-out;
+
+//border
+$border-radius: 4px;
+$border-color: #ccc;
+$border-width: 1px;
