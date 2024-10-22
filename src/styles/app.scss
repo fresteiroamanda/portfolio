@@ -1,0 +1,9 @@
+@import '../styles/_variables'; 
+
+body {
+   background-color: $background-color;
+   margin: 0;
+   font-family: $font-family;
+   line-height: 1.6;
+   color: #fff;
+}

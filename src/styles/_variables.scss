@@ -9,6 +9,7 @@ $error-color: #dc3545;
 $warning-color: #ffc107;
 $info-color: #17a2b8;
 $text-color: #fff;
+$second-text-color: #ccc;
 
 //fonts
 $font-size-base: 16px;
@@ -38,6 +39,7 @@ $breakpoint-xl: 1200px;
 //shadows
 $box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 $shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.2);
+$shadow-stronger: 0 4px 20px rgba(0, 0, 0, 0.5);
 
 //trasitions
 $transition-duration: 0.3s;
