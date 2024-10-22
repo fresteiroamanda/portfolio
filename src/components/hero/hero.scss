@@ -1,34 +1,54 @@
+// src/components/hero.scss
+
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: url('') no-repeat center center/cover;
-  color: white;
-  text-align: center;
+    position: relative; // Permite o posicionamento absoluto do canvas
+    width: 100%;
+    height: 100vh; // Ocupa 100% da altura da viewport
+    overflow: hidden; // Esconde qualquer conteúdo que transborde
+    color: white; // Cor do texto para se destacar sobre o fundo
 
-  h1 {
-    font-size: 48px;
-    margin: 0;
-  }
-
-  p {
-    font-size: 20px;
-    margin: 10px 0 20px;
-  }
-
-  &__button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #0056b3;
+    .hero__background {
+        position: absolute; // Coloca o fundo como absoluto
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; // Certifica-se de que fique abaixo do conteúdo
     }
-  }
+
+    .hero__content {
+        position: absolute; // Permite o posicionamento em relação ao hero
+        top: 50%; // Move para baixo 50% da altura
+        left: 50%; // Move para a direita 50% da largura
+        transform: translate(-50%, -50%); // Ajusta para centralizar
+        z-index: 2; // Garante que o conteúdo fique acima do canvas
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Centraliza o conteúdo horizontalmente
+        justify-content: center; // Centraliza verticalmente
+        text-align: center; // Centraliza o texto
+
+        h1 {
+            font-size: 2.5rem; // Tamanho do título
+            margin: 0; // Remove margens
+        }
+
+        p {
+            font-size: 1.2rem; // Tamanho do parágrafo
+            margin: 0.5rem 0; // Margem entre parágrafo e título
+        }
+
+        .hero__button {
+            padding: 0.75rem 1.5rem; // Estilo do botão
+            background-color: rgba(255, 255, 255, 0.2); // Fundo semi-transparente
+            color: white; // Cor do texto do botão
+            text-decoration: none; // Remove o sublinhado
+            border-radius: 5px; // Bordas arredondadas
+            transition: background-color 0.3s; // Transição suave
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5); // Muda a cor ao passar o mouse
+            }
+        }
+    }
 }
