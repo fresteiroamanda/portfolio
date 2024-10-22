@@ -1,0 +1,11 @@
+// src/components/constellation.scss
+
+.constellation-canvas {
+    position: absolute;  // Permite que o canvas ocupe todo o espaço disponível
+    top: 0;              // Alinha o canvas ao topo
+    left: 0;             // Alinha o canvas à esquerda
+    width: 100%;         // Largura total do canvas
+    height: 100vh;      // Altura total da viewport
+    overflow: hidden;    // Oculta qualquer transbordamento que possa ocorrer
+    z-index: 0;         // Coloca o canvas atrás do conteúdo, se necessário
+}
